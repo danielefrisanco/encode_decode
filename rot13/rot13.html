@@ -1,0 +1,18 @@
+<script src="rot13.js" type="text/javascript"></script> 
+<script>
+
+function rot13_click() {
+
+	var rot13_testo = document.getElementById('testo').value;
+	 
+	var v = rot13(rot13_testo);
+	var res = "";
+	for (var i = 0; i < v.length; i++)
+		res = res + v[i];
+
+	document.getElementById("testo").value = res;
+};
+
+</script> 
+ <input type = text id = testo >
+	<input type = button id = rot13 value = rot13 onclick = "rot13_click()" >
