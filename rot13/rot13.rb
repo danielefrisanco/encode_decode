@@ -14,3 +14,17 @@ end
  
 end
 rot13("extreme")
+
+
+ 
+ 
+ "extreme".split("").each do |x| 
+    if x[0].between?(65, 77) or x[0].between?(97, 109)    then  print((x[0] +13).chr)   
+		elsif x[0].between?(110,122) or x[0].between?(78,90)   then  print((x[0] -13).chr)
+    
+  end
+end
+
+
+
+ 
